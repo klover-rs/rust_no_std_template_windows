@@ -6,6 +6,7 @@ use core::panic::PanicInfo;
 
 mod print;
 
+
 use print::print_impl;
 use std_alloc::string::ToString;
 use wee_alloc::WeeAlloc;
@@ -38,6 +39,7 @@ macro_rules! main {
             };
 
             // will exit the process
+            
             unsafe { ExitProcess(exit_code as u32) };
 
             loop {} // unreachable, but still needs to be there to give the compiler the expected return type !
@@ -62,6 +64,8 @@ main!({
             break;
         }
     }
+
+
 
     let formatted_msg = std_alloc::format!("abc: {}", 23);
 

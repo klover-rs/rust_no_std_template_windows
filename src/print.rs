@@ -1,7 +1,3 @@
-use core::fmt;
-
-
-
 use winapi::um::fileapi::WriteFile;
 use winapi::um::handleapi::INVALID_HANDLE_VALUE;
 use winapi::um::wincon::SetConsoleOutputCP;
