@@ -4,6 +4,10 @@ this is a template to get started with no_std and no_main in an windows environm
 this project aims for people who want to quickly get started with no_std on winodws to reduce the file size of their application
 this project has been entirely made with rusts core features and the [winapi crate](https://crates.io/crates/winapi)
 
+this project also has an allocator which is possible through [wee_alloc](https://crates.io/crates/wee_alloc). even tho its designed for wasm, it also works with `#![no_std]`.
+
+an allocater is required for some basic functionality of rust e.g. a `vec![];`
+
 ## Get started 🔥 
 
 ### prerequisites 
