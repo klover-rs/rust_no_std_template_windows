@@ -20,7 +20,7 @@ i tried it with both stable and nightly, and both worked for me.
 anyways, if you want to make sure that it works for you, you can install nightly with the following commands.
 
 ```
-rustup install nightly
+rustup toolchain install nightly
 ```
 
 ```
